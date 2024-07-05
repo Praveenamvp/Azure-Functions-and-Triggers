@@ -1,0 +1,120 @@
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .list-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-container h2 {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+  }
+  
+  .list-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-container li {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    transition: background-color 0.2s ease;
+  }
+  
+  .list-container li:hover {
+    background-color: #e9ecef;
+  }
+  
+  .upload-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .file-input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .file-input:hover, .file-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .upload-button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+  }
+  
+  .upload-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .upload-button:active {
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 600px) {
+    .upload-container {
+      padding: 15px;
+    }
+  
+    .list-container {
+      padding: 15px;
+    }
+  
+    .upload-controls {
+      padding: 20px;
+    }
+  
+    .file-input,
+    .upload-button {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
