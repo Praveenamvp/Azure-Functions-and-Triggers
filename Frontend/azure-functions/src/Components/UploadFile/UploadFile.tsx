@@ -48,7 +48,8 @@ function UploadFile() {
 
   return (
     <div className="upload-container">
-      {Object.keys(containers).map((containerName: any) => (
+    <div className="list">
+    {Object.keys(containers).map((containerName: any) => (
         <div key={containerName} className="list-container">
           <h2>{containerName}</h2>
           <ul>
@@ -58,6 +59,8 @@ function UploadFile() {
           </ul>
         </div>
       ))}
+    </div>
+      
       <div className="upload-controls">
         <input
           type="file"

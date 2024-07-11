@@ -34,7 +34,7 @@ namespace BusinessLayer.Implementation
 
             await foreach (BlobContainerItem container in _blobClient.GetBlobContainersAsync())
             {
-                if(container.Name =="containeroner"|| container.Name == "containertwo")
+                if(container.Name =="containerone"|| container.Name == "containertwo")
                 {
                     var blobNames = new List<string>();
 
